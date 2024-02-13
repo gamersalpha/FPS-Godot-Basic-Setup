@@ -1,3 +1,8 @@
+E01 - Finish
+ 
+E02 - Finish
+
+
 # FPS Godot Basic Setup
 
 ![alt text](https://github.com/StayAtHomeDev-Git/FPS-Godot-Basic-Setup/blob/main/readme_img.png)
