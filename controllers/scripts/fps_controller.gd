@@ -14,7 +14,7 @@ extends CharacterBody3D
 @export var CAMERA_CONTROLLER : Camera3D
 @export var ANIMATIONPLAYER : AnimationPlayer
 @export var CROUCH_SHAPECAST : Node3D
-#testDemo20240215-10:52
+
 var _speed : float
 var _mouse_input : bool = false
 var _rotation_input : float
