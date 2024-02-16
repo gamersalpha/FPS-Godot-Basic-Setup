@@ -5,6 +5,7 @@ class_name  CrouchingPlayerState extends PlayerMovementState
 @export var DECELERATION : float = 0.25
 @export_range(1,6,0.1) var CROUCH_SPEED : float = 4.00
 
+
 @onready var CROUCH_SHAPECAST : ShapeCast3D = %ShapeCast3D
 
 var RELEASED : bool = false
@@ -14,7 +15,7 @@ func enter(previous_state) -> void:
 	if previous_state.name != "SlidingPlayerState":
 		ANIMATION.play("Crouching",-1.0,CROUCH_SPEED)
 	elif previous_state.name == "SlidingPlayerState":
-		ANIMATION.current_animation = "Crouching"
+		ANIMATION.current_animation = "Crouch"
 		ANIMATION.seek(1.0, true)
 		
 func exit() -> void:
@@ -33,7 +34,8 @@ func update(delta):
 
 func uncrouch():
 	if CROUCH_SHAPECAST.is_colliding() == false and Input.is_action_pressed("crouch") == false:
-		ANIMATION.play("Crouching",1.0,-CROUCH_SPEED * 1.5,true)
+		#ANIMATION.play("Crouch",1.0,-CROUCH_SPEED * 1.5,true)
+		ANIMATION.play("Crouch",-1.0,-CROUCH_SPEED,true)
 		if ANIMATION.is_playing():
 			await ANIMATION.animation_finished
 		transition.emit("IdlePlayerState")

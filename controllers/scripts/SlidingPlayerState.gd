@@ -24,10 +24,10 @@ func set_tilt(player_rotation) -> void:
 	tilt.z = clamp(TILT_AMOUNT * player_rotation,-0.1,0.1)
 	if tilt.z == 0.0:
 		tilt.z = 0.05
-	ANIMATION.get_animation("Sliding").track_set_key_value(5,1,tilt)
-	ANIMATION.get_animation("Sliding").track_set_key_value(5,2,tilt)
+	ANIMATION.get_animation("Sliding").track_set_key_value(7,1,tilt)
+	ANIMATION.get_animation("Sliding").track_set_key_value(7,2,tilt)
 	
-	print(ANIMATION.get_animation("Sliding").track_get_path(5))
+	print(ANIMATION.get_animation("Sliding").track_get_path(7))
 
 func finish():
 	transition.emit("CrouchingPlayerState")
