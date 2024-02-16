@@ -5,6 +5,9 @@ extends State
 var PLAYER: Player
 var ANIMATION: AnimationPlayer
 
+func enter(previous_stat) -> void:
+		pass
+		
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	await  owner.ready
