@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://btv0a42cgxt8g" path="res://levels/WE_test.tscn" id="1_0tx4v"]
 [ext_resource type="Material" uid="uid://cn1gsy15bkaff" path="res://materials/grid.tres" id="2_4lli0"]
 [ext_resource type="PackedScene" uid="uid://c3ffql15mo0aj" path="res://controllers/fps_controller.tscn" id="3_bw4d1"]
-[ext_resource type="Material" path="res://materials/grid-red.tres" id="4_6amsw"]
+[ext_resource type="Material" uid="uid://bpyp55l4660cp" path="res://materials/grid-red.tres" id="4_6amsw"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_gd0ev"]
 material = ExtResource("2_4lli0")

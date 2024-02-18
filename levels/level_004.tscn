@@ -4,7 +4,7 @@
 [ext_resource type="Material" uid="uid://cn1gsy15bkaff" path="res://materials/grid.tres" id="2_ll1el"]
 [ext_resource type="PackedScene" uid="uid://c3ffql15mo0aj" path="res://controllers/fps_controller.tscn" id="3_bvoh3"]
 [ext_resource type="Material" uid="uid://b5eqsmjpkjkkd" path="res://materials/grid-orange.tres" id="3_vt7ae"]
-[ext_resource type="Material" path="res://materials/grid-red.tres" id="4_isg81"]
+[ext_resource type="Material" uid="uid://bpyp55l4660cp" path="res://materials/grid-red.tres" id="4_isg81"]
 
 [node name="Node3D" type="Node3D"]
 
