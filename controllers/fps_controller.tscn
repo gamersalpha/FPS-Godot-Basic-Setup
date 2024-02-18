@@ -507,17 +507,9 @@ script = ExtResource("6_ol7nt")
 
 [node name="WalkingPlayerState" type="Node" parent="PlayerStateMachine"]
 script = ExtResource("7_tqs6g")
-SPEED = null
-ACCELERATION = null
-DECELERATION = null
-TOP_ANIM_SPEED = null
 
 [node name="SprintingPlayerState" type="Node" parent="PlayerStateMachine"]
 script = ExtResource("9_idqp6")
-SPEED = null
-ACCELERATION = null
-DECELERATION = null
-TOP_ANIM_SPEED = null
 
 [node name="CrouchingPlayerState" type="Node" parent="PlayerStateMachine"]
 script = ExtResource("10_gmkq7")
