@@ -11,6 +11,7 @@ class_name  CrouchingPlayerState extends PlayerMovementState
 var RELEASED : bool = false
 
 func enter(previous_state) -> void:
+	
 	ANIMATION.speed_scale = 1.0
 	if previous_state.name != "SlidingPlayerState":
 		ANIMATION.play("Crouching",-1.0,CROUCH_SPEED)
@@ -31,14 +32,16 @@ func update(delta):
 	elif Input.is_action_pressed("crouch") == false and RELEASED == false:
 		RELEASED = true
 		uncrouch()
+		
 
 func uncrouch():
 	if CROUCH_SHAPECAST.is_colliding() == false and Input.is_action_pressed("crouch") == false:
-		#ANIMATION.play("Crouch",1.0,-CROUCH_SPEED * 1.5,true)
 		ANIMATION.play("Crouch",-1.0,-CROUCH_SPEED,true)
 		if ANIMATION.is_playing():
 			await ANIMATION.animation_finished
 		transition.emit("IdlePlayerState")
 	elif CROUCH_SHAPECAST.is_colliding() == true:
-		await get_tree().create_timer(0.).timeout
+		await get_tree().create_timer(0.1).timeout
 		uncrouch()
+
+	
