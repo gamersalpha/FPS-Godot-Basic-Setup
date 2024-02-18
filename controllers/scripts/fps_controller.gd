@@ -19,8 +19,8 @@ var _camera_rotation : Vector3
 var _current_rotation : float
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
-
-var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+#var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+var gravity = 12.0
 
 func _unhandled_input(event: InputEvent) -> void:
 	_mouse_input = event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED
@@ -60,7 +60,7 @@ func _ready():
 func _physics_process(delta):
 	
 	Global.debug.add_property("Velocity","%.2f" % velocity.length(), 2)
-	
+
 	update_camera(delta)
 	
 func update_gravity(delta) -> void:
