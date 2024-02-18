@@ -11,7 +11,7 @@
 [node name="WorldEnvironment" parent="." instance=ExtResource("1_gso8h")]
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("3_bvoh3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -14.9147)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 54.7553)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.01409, 3.0127, 34.0804)

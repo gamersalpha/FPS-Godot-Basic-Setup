@@ -1,7 +1,8 @@
-[gd_scene load_steps=26 format=3 uid="uid://c3ffql15mo0aj"]
+[gd_scene load_steps=27 format=3 uid="uid://c3ffql15mo0aj"]
 
 [ext_resource type="Script" path="res://controllers/scripts/fps_controller.gd" id="1_pgc1p"]
 [ext_resource type="Material" uid="uid://b4gwd5h7ixvct" path="res://materials/player.tres" id="2_gldw4"]
+[ext_resource type="PackedScene" uid="uid://dmshu36htyitt" path="res://models/weapon/crowbar/crowbar.glb" id="3_m6b67"]
 [ext_resource type="Script" path="res://scripts/Reticle.gd" id="3_tgcuf"]
 [ext_resource type="Theme" uid="uid://bdkxky6ptohga" path="res://themes/debug.tres" id="4_xftu8"]
 [ext_resource type="Script" path="res://scripts/debug.gd" id="5_tkw17"]
@@ -547,6 +548,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_u6tj1")
 
 [node name="PlaceholderMesh" type="MeshInstance3D" parent="CollisionShape3D"]
+visible = false
 mesh = SubResource("CapsuleMesh_6tv51")
 
 [node name="CameraController" type="Node3D" parent="."]
@@ -557,6 +559,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 [node name="ReflectionProbe" type="ReflectionProbe" parent="CameraController/Camera3D"]
 update_mode = 1
 enable_shadows = true
+
+[node name="WeaponRig" type="Node3D" parent="CameraController/Camera3D"]
+
+[node name="crowbar" parent="CameraController/Camera3D/WeaponRig" instance=ExtResource("3_m6b67")]
+transform = Transform3D(-0.992459, 0.100939, 0.0695509, 0.0955633, 0.992463, -0.076719, -0.0767706, -0.0694939, -0.994624, 0.215, -0.315, -0.33)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
