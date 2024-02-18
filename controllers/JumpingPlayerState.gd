@@ -25,6 +25,10 @@ func update(delta):
 	if Input.is_action_just_pressed("jump") and DOUBLE_JUMP == false:
 		DOUBLE_JUMP = true
 		PLAYER.velocity.y  = DOUBLE_JUMP_VELOCITY
+	
+	if Input.is_action_just_released("jump"):
+		if PLAYER.velocity.y > 0:
+			PLAYER.velocity.y = PLAYER.velocity.y / 2.0	
 
 	if PLAYER.is_on_floor():
 		transition.emit("IdlePlayerState")

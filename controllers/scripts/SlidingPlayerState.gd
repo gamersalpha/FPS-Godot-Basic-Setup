@@ -18,6 +18,8 @@ func update(delta):
 	PLAYER.update_gravity(delta)
 	#PLAYER.update_input(SPEED,ACCELERATION,DECELERATION) #Disable to maintain direction while sliding
 	PLAYER.update_velocity()
+	if Input.is_action_just_pressed("jump") and PLAYER.is_on_floor():
+		transition.emit("JumpingPlayerState")
 
 func set_tilt(player_rotation) -> void:
 	var tilt = Vector3.ZERO
