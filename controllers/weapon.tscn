@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbobcdnw3rrsr"]
+
+[ext_resource type="ArrayMesh" uid="uid://vftjrmobn0ed" path="res://models/weapon/crowbar/crowbar.res" id="1_jpox3"]
+
+[node name="Weapon" type="Node3D"]
+
+[node name="WeaponMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.45157, 0.0994578, -0.00954974, -0.0198517, -0.150789, 1.44703, 0.0979239, 1.44374, 0.15179, 0.167, -0.203, -0.243)
+cast_shadow = 0
+mesh = ExtResource("1_jpox3")
+
+[node name="WeaponShadow" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.45157, 0.0994578, -0.00954974, -0.0198517, -0.150789, 1.44703, 0.0979239, 1.44374, 0.15179, 0.167, -0.203, -0.243)
+cast_shadow = 3
+mesh = ExtResource("1_jpox3")

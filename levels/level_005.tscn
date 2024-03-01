@@ -162,7 +162,8 @@ light_color = Color(0.282353, 0.282353, 0.282353, 1)
 shadow_enabled = true
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
-transform = Transform3D(-0.119543, 0.0836778, -0.989296, 0.0100383, 0.996493, 0.0830735, 0.992778, 0, -0.119964, -2.67597, 4.72164, 65.7869)
+transform = Transform3D(-0.119543, 0.0836778, -0.989296, 0.0100383, 0.996493, 0.0830735, 0.992778, 0, -0.119964, -0.737839, 2.18101, 69.5922)
+light_color = Color(0.137255, 0.74902, 0.403922, 1)
 shadow_enabled = true
 spot_range = 13.8711
 
@@ -172,7 +173,7 @@ shadow_enabled = true
 spot_range = 13.8711
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="."]
-transform = Transform3D(-0.119543, 0.0836778, -0.989296, 0.0100383, 0.996493, 0.0830735, 0.992778, 0, -0.119964, -2.67597, 4.72164, 77.3845)
+transform = Transform3D(-0.119159, 0.115665, -0.986115, 0.0138756, 0.993288, 0.11483, 0.992778, 1.87619e-09, -0.119964, -2.22122, 3.35114, 77.3845)
 light_color = Color(1, 0, 0.0313726, 1)
 shadow_enabled = true
 spot_range = 13.8711
