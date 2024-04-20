@@ -18,6 +18,12 @@ func _input(event):
 	if event.is_action_pressed("Weapon2"):
 		WEAPON_TYPE = load("res://models/weapon/crowbar2/CrowbarL.tres")
 		load_weapon()
+	if event.is_action_pressed("Weapon3"):
+		WEAPON_TYPE = load("res://models/weapon/M254/res-M254.tres")
+		load_weapon()
+
+	Global.debug.add_property("Weapon_TYPE",WEAPON_TYPE.name, 4)
+
 
 func _ready() -> void:
 	load_weapon()
