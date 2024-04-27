@@ -4,7 +4,7 @@
 [ext_resource type="Material" uid="uid://b4gwd5h7ixvct" path="res://materials/player.tres" id="2_gldw4"]
 [ext_resource type="PackedScene" uid="uid://cbobcdnw3rrsr" path="res://controllers/weapon.tscn" id="3_r1x3n"]
 [ext_resource type="Script" path="res://scripts/Reticle.gd" id="3_tgcuf"]
-[ext_resource type="Resource" uid="uid://cllr2qgfdm766" path="res://models/weapon/crowbar/Crowbar.tres" id="4_vgoeg"]
+[ext_resource type="Resource" uid="uid://bphbrf3qhaxjb" path="res://models/weapon/M254/Resource-M254.tres" id="4_bsxc0"]
 [ext_resource type="Theme" uid="uid://bdkxky6ptohga" path="res://themes/debug.tres" id="4_xftu8"]
 [ext_resource type="Script" path="res://scripts/debug.gd" id="5_tkw17"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="6_4e1jy"]
@@ -564,14 +564,14 @@ enable_shadows = true
 [node name="WeaponRig" type="Node3D" parent="CameraController/Camera3D"]
 
 [node name="Weapon" parent="CameraController/Camera3D/WeaponRig" instance=ExtResource("3_r1x3n")]
-transform = Transform3D(-0.997639, 0.0683565, -0.00656339, -0.0136437, -0.103634, 0.994522, 0.0673018, 0.992264, 0.104322, 0.168, -0.203, -0.243)
-WEAPON_TYPE = ExtResource("4_vgoeg")
+transform = Transform3D(-0.0517625, 0.19309, 0.00609022, 8.77129e-05, -0.00628156, 0.199901, 0.193186, 0.0517396, 0.00154106, 1.533, -1.696, -1.911)
+WEAPON_TYPE = ExtResource("4_bsxc0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_61h8n")
 }
-blend_times = [&"JumpEnd", &"Walking", 0.5, &"JumpEnd", &"JumpStart", 0.1]
+blend_times = [&"JumpEnd", &"JumpStart", 0.1, &"JumpEnd", &"Walking", 0.5]
 
 [node name="ShapeCast3D" type="ShapeCast3D" parent="."]
 unique_name_in_owner = true

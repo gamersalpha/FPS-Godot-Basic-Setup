@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Weapons" load_steps=3 format=3 uid="uid://bphbrf3qhaxjb"]
+
+[ext_resource type="Script" path="res://models/weapon/Weapons.gd" id="1_t2q8v"]
+[ext_resource type="ArrayMesh" uid="uid://c2invpwce78u2" path="res://models/weapon/M254/Models-M254.res" id="1_wcje6"]
+
+[resource]
+script = ExtResource("1_t2q8v")
+name = &"M254"
+position = Vector3(1.533, -1.696, -1.911)
+rotation = Vector3(-88.2, 75.8, 179.2)
+scale = Vector3(0.2, 0.2, 0.2)
+mesh = ExtResource("1_wcje6")
+shadow = true
+domage_amount = 0.0
