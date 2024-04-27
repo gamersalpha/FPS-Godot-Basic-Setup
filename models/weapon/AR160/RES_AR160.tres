@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Weapons" load_steps=3 format=3 uid="uid://dlq8oc5hcenn"]
+
+[ext_resource type="ArrayMesh" uid="uid://duxukfituhk3v" path="res://models/weapon/AR160/Ressource_AR160.res" id="1_iuo88"]
+[ext_resource type="Script" path="res://models/weapon/Weapons.gd" id="1_je5j6"]
+
+[resource]
+script = ExtResource("1_je5j6")
+name = &"AR160"
+position = Vector3(0.472, -0.304, -0.717)
+rotation = Vector3(-84.2, -49.8, 138.7)
+scale = Vector3(0.03, 0.03, 0.03)
+mesh = ExtResource("1_iuo88")
+shadow = true
+domage_amount = 0.0

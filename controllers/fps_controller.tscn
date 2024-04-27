@@ -4,7 +4,7 @@
 [ext_resource type="Material" uid="uid://b4gwd5h7ixvct" path="res://materials/player.tres" id="2_gldw4"]
 [ext_resource type="PackedScene" uid="uid://cbobcdnw3rrsr" path="res://controllers/weapon.tscn" id="3_r1x3n"]
 [ext_resource type="Script" path="res://scripts/Reticle.gd" id="3_tgcuf"]
-[ext_resource type="Resource" uid="uid://bphbrf3qhaxjb" path="res://models/weapon/M254/Resource-M254.tres" id="4_bsxc0"]
+[ext_resource type="Resource" uid="uid://dlq8oc5hcenn" path="res://models/weapon/AR160/RES_AR160.tres" id="4_n2404"]
 [ext_resource type="Theme" uid="uid://bdkxky6ptohga" path="res://themes/debug.tres" id="4_xftu8"]
 [ext_resource type="Script" path="res://scripts/debug.gd" id="5_tkw17"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="6_4e1jy"]
@@ -564,8 +564,8 @@ enable_shadows = true
 [node name="WeaponRig" type="Node3D" parent="CameraController/Camera3D"]
 
 [node name="Weapon" parent="CameraController/Camera3D/WeaponRig" instance=ExtResource("3_r1x3n")]
-transform = Transform3D(-0.0517625, 0.19309, 0.00609022, 8.77129e-05, -0.00628156, 0.199901, 0.193186, 0.0517396, 0.00154106, 1.533, -1.696, -1.911)
-WEAPON_TYPE = ExtResource("4_bsxc0")
+transform = Transform3D(0.000503674, -0.0299078, -0.00229497, 0.00198585, -0.00225701, 0.029849, -0.02993, -0.000653055, 0.00194186, 0.471678, -0.304194, -0.717143)
+WEAPON_TYPE = ExtResource("4_n2404")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

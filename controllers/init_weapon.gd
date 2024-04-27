@@ -21,7 +21,10 @@ func _input(event):
 	if event.is_action_pressed("Weapon3"):
 		WEAPON_TYPE = load("res://models/weapon/M254/Resource-M254.tres")
 		load_weapon()
-		
+	if event.is_action_pressed("Weapon4"):
+		WEAPON_TYPE = load("res://models/weapon/AR160/RES_AR160.tres")
+		load_weapon()
+				
 func _ready() -> void:
 	load_weapon()
 
