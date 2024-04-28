@@ -564,14 +564,14 @@ enable_shadows = true
 [node name="WeaponRig" type="Node3D" parent="CameraController/Camera3D"]
 
 [node name="Weapon" parent="CameraController/Camera3D/WeaponRig" instance=ExtResource("3_r1x3n")]
-transform = Transform3D(0.000503674, -0.0299078, -0.00229497, 0.00198585, -0.00225701, 0.029849, -0.02993, -0.000653055, 0.00194186, 0.471678, -0.304194, -0.717143)
+transform = Transform3D(0.000498505, -0.0299063, -0.00231559, 0.00200092, -0.0022776, 0.0298464, -0.029929, -0.000650397, 0.00195683, 0.472, -0.304, -0.717)
 WEAPON_TYPE = ExtResource("4_n2404")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_61h8n")
 }
-blend_times = [&"JumpEnd", &"JumpStart", 0.1, &"JumpEnd", &"Walking", 0.5]
+blend_times = [&"JumpEnd", &"Walking", 0.5, &"JumpEnd", &"JumpStart", 0.1]
 
 [node name="ShapeCast3D" type="ShapeCast3D" parent="."]
 unique_name_in_owner = true
