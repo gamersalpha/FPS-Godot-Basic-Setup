@@ -1,11 +1,12 @@
-[gd_scene load_steps=28 format=3 uid="uid://c3ffql15mo0aj"]
+[gd_scene load_steps=29 format=3 uid="uid://c3ffql15mo0aj"]
 
 [ext_resource type="Script" path="res://controllers/scripts/fps_controller.gd" id="1_pgc1p"]
 [ext_resource type="Material" uid="uid://b4gwd5h7ixvct" path="res://materials/player.tres" id="2_gldw4"]
 [ext_resource type="PackedScene" uid="uid://cbobcdnw3rrsr" path="res://controllers/weapon.tscn" id="3_r1x3n"]
 [ext_resource type="Script" path="res://scripts/Reticle.gd" id="3_tgcuf"]
-[ext_resource type="Resource" uid="uid://dlq8oc5hcenn" path="res://models/weapon/AR160/RES_AR160.tres" id="4_n2404"]
+[ext_resource type="Resource" uid="uid://cllr2qgfdm766" path="res://models/weapon/crowbar/Crowbar.tres" id="4_wax0n"]
 [ext_resource type="Theme" uid="uid://bdkxky6ptohga" path="res://themes/debug.tres" id="4_xftu8"]
+[ext_resource type="Texture2D" uid="uid://bjmnu0wrlv1yr" path="res://textures/new_noise_texture_2d.tres" id="5_kmnyt"]
 [ext_resource type="Script" path="res://scripts/debug.gd" id="5_tkw17"]
 [ext_resource type="Script" path="res://scripts/state_machine.gd" id="6_4e1jy"]
 [ext_resource type="Script" path="res://controllers/scripts/IdlePlayerState.gd" id="6_ol7nt"]
@@ -564,8 +565,10 @@ enable_shadows = true
 [node name="WeaponRig" type="Node3D" parent="CameraController/Camera3D"]
 
 [node name="Weapon" parent="CameraController/Camera3D/WeaponRig" instance=ExtResource("3_r1x3n")]
-transform = Transform3D(0.000498505, -0.0299063, -0.00231559, 0.00200092, -0.0022776, 0.0298464, -0.029929, -0.000650397, 0.00195683, 0.472, -0.304, -0.717)
-WEAPON_TYPE = ExtResource("4_n2404")
+transform = Transform3D(-1.45157, 0.0994586, -0.00954974, -0.0198516, -0.150788, 1.44703, 0.0979241, 1.44374, 0.151789, 0.168, -0.203, -0.243)
+WEAPON_TYPE = ExtResource("4_wax0n")
+sway_noise = ExtResource("5_kmnyt")
+sway_speed = 0.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
